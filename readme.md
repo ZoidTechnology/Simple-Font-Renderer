@@ -17,11 +17,11 @@ A lightweight bitmap font renderer designed for embedded and other resource-cons
 
 ## Converting Fonts
 
-Font descriptors should be exported from BMFont in text format, while textures should use the PNG format. To convert a font to a C file, enter the converter directory and run:
+Ensure a recent version of [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/) is installed. Install dependencies by entering the converter directory and running `npm install`. Font descriptors should be exported from BMFont in the text format, while textures should use the PNG format. To convert a font to a C file, run:
 
 	npm run convert <input> <bit depth> <destination>
 
-The input should be a path to a font descriptor file exported from BMFont. For optimal results, disable font smoothing within BMFont when using a bit depth of 1.
+The input should be a path to a font descriptor exported from BMFont. For optimal results, disable font smoothing within BMFont when using a bit depth of 1.
 
 ## Rendering Text
 
