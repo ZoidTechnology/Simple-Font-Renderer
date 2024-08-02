@@ -49,6 +49,10 @@ try {
 	let max = Number.NEGATIVE_INFINITY;
 
 	for (const glyph of parsed.char) {
+		if (glyph.id < START_INDEX || glyph.id > END_INDEX) {
+			continue;
+		}
+
 		const page = pages[glyph.page];
 		const length = Math.ceil(glyph.width * glyph.height / (8 / bitDepth));
 		const data = new Uint8Array(length);
