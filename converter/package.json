@@ -1,0 +1,10 @@
+{
+	"name": "converter",
+	"type": "module",
+	"dependencies": {
+		"pngjs": "^7.0.0"
+	},
+	"scripts": {
+		"convert": "node index.js"
+	}
+}

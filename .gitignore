@@ -1,0 +1,4 @@
+/.vscode
+/converter/node_modules
+/renderer/font.c
+/renderer/renderer
