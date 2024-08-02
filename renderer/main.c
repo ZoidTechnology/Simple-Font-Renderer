@@ -1,6 +1,7 @@
 #include "config.h"
 #include "text.h"
 #include <SDL2/SDL.h>
+#include <time.h>
 
 extern const text_font font;
 SDL_Renderer *renderer;
@@ -39,6 +40,8 @@ int main() {
 	SDL_CreateWindowAndRenderer(WIDTH * SCALE, HEIGHT * SCALE, 0, &window, &renderer);
 	SDL_RenderSetScale(renderer, SCALE, SCALE);
 	SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+
+	srand(time(NULL));
 
 	render();
 
